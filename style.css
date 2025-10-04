@@ -1,0 +1,265 @@
+body{
+    background-color: #e0e1dd;
+}
+
+#titulos{
+  color: white;
+  padding: 5px;
+  background-color: #002636;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h1{
+  font-family: 'Bitcount Single';
+  font-size: xx-large;
+}
+
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h4{
+  font-size: 17px;
+}
+
+#links nav{
+  background-color: #c1cbd3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+}
+
+.link{
+  background-color: white;
+  color: black;
+  font-family: fantasy;
+  text-decoration: none;
+  width: 300px;
+  height: 29px;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+
+}
+
+#hero{
+  background: url(tecnologia.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/*BOTÓN*/
+#registro{
+  cursor: pointer;
+  background-color: white;
+  border-color: #002636;
+  border-style: solid;
+  width: 90px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+#registro:hover{
+  background-color: #629fbb;
+}
+
+/*DIV TABLE*/
+#table{
+  justify-items: center;
+  
+}
+
+table{
+  background-color: #002636;
+  color: white;
+  width: 80%;
+  height: 200px;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 15px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th{
+  color: #629fbb;
+  height: 30px;
+}
+
+#ponentes{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.ponente{
+  background-color: #a19f9f;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 20px;
+  width: 70%;
+  height: 250px;
+  text-align: center;
+  padding: 15px;
+}
+
+.ponente img{
+  width: 70%;
+  border-radius: 20%;
+}
+
+footer{
+    background-color: #002636;
+    text-align-last: right;
+    padding: 5px;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer a{
+  color: white;
+}
+
+/*TABLET*/
+@media screen and (min-width: 761px) and (max-width: 1200px){
+  
+  #links nav{
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  .link{
+    width: 100px;
+  }
+
+  #agenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  #titulo-agenda{
+    align-content: center;
+    padding: 20px;
+  }
+
+  table{
+    width: 500px;
+    height: 300px;
+  }
+
+  th{
+    height: 50px;
+  }
+
+  #ponentes{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .ponente{
+    width: 28%;
+    height: 220px;
+  }
+
+  .ponente img{
+    width: 33%;
+  }
+
+}
+
+/*LAPTOP*/
+@media screen and (min-width: 1201px){
+
+  h2{
+    font-size: 30px;
+  }
+
+  h4{
+    font-size: 20px;
+  }
+
+  #links nav{
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  .link{
+    width: 100px;
+  }
+
+  #hero{
+    padding: 30px;
+  }
+  
+  #agenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  #titulo-agenda{
+    align-content: center;
+    padding: 20px;
+  }
+
+  table{
+    width: 500px;
+    height: 300px;
+  }
+
+  th{
+    height: 50px;
+  }
+
+  #ponentes{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .ponente{
+    width: 28%;
+    height: 220px;
+  }
+
+  .ponente:hover{
+    width: 33%;
+  }
+
+  .ponente img{
+    width: 33%;
+  }
+}
